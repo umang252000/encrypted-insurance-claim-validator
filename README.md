@@ -1,7 +1,8 @@
 # Encrypted Insurance Claim Validator
 Zero-Knowledge Fraud Detection using Encrypted Medical & Financial Embeddings
 
-<img width="1024" height="1024" alt="Gemini_Generated_Image_bun3iybun3iybun3" src="https://github.com/user-attachments/assets/e58986a1-e5c2-416c-b7e9-2c068da5d5de" />
+<img width="1536" height="1024" alt="ChatGPT Image Dec 19, 2025, 09_37_29 PM" src="https://github.com/user-attachments/assets/b740f23a-b984-43af-aeee-0c67e125ec3b" />
+
 
 ## Overview
 
@@ -108,6 +109,8 @@ Policy rules	Insurance → rule enforcement
 0.7 – 1.0 →	❌ Auto-Reject
 
 This mirrors real insurance decision engines.
+
+<img width="1024" height="1024" alt="Gemini_Generated_Image_bun3iybun3iybun3" src="https://github.com/user-attachments/assets/e58986a1-e5c2-416c-b7e9-2c068da5d5de" />
 
 ## Professional Demo UI
 
