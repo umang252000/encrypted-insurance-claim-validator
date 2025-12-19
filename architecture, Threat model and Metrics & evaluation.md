@@ -1,6 +1,9 @@
 # Architecture Diagram
 ## System Architecture Overview
 
+<img width="1024" height="1024" alt="Gemini_Generated_Image_q00wgoq00wgoq00w" src="https://github.com/user-attachments/assets/15863e64-f09b-4702-8e74-950d22429309" />
+
+
 The Encrypted Insurance Claim Validator is designed as a zero-trust, multi-party system where no participant ever gains access to plaintext medical data or raw embeddings.
 
 The architecture enforces encryption-at-source, encrypted-in-use, and role-isolated access across all components.
@@ -88,6 +91,9 @@ This system is designed under a “assume breach” security philosophy.
 
 Even if infrastructure, databases, or logs are compromised, sensitive patient data remains protected.
 
+<img width="1024" height="1024" alt="Gemini_Generated_Image_dvifqbdvifqbdvif" src="https://github.com/user-attachments/assets/2fb91431-31dc-4ca5-92cc-0d778ed0becd" />
+
+
 ## Threat 1: PHI Leakage
 ### Risk
 
@@ -162,80 +168,73 @@ Even a full database breach cannot reconstruct patient information.
 This project is evaluated across performance, security, and decision quality.
 
 ## Performance Metrics
-### Metric	Measured Result
-Embedding generation	< 100 ms
-Encrypted similarity search	< 50 ms
-Fraud decision latency	< 300 ms
-UI response time	Near-instant
+### Metric ─▶	Measured Result
+Embedding generation ─▶	< 100 ms
+
+Encrypted similarity search ─▶	< 50 ms
+
+Fraud decision latency ─▶	< 300 ms
+
+UI response time ─▶	Near-instant
 
 These latencies are compatible with real-time insurance workflows.
 
-Security Metrics
-Metric	Result
-Plaintext medical exposure	0
-Raw embeddings stored	0
-Decrypt operations at validator	0
-Inversion attack surface	Eliminated
+## Security Metrics
+### Metric ─▶	Result
+Plaintext medical exposure ─▶	0
+
+Raw embeddings stored ─▶	0
+
+Decrypt operations at validator ─▶	0
+
+Inversion attack surface ─▶	Eliminated
 
 Security is achieved architecturally, not via policy promises.
 
-Fraud Detection Evaluation
+## Fraud Detection Evaluation
 
 The fraud engine evaluates claims using multiple independent signals:
 
-Signals Used
+## Signals Used
 
-Encrypted medical similarity (clinical consistency)
+- Encrypted medical similarity (clinical consistency)
+- Cost anomaly detection (claimed vs expected)
+- Policy rule enforcement
 
-Cost anomaly detection (claimed vs expected)
+## Decision Outcomes
+### Scenario ─▶	System Behavior
+Low deviation	─▶ Auto-approve
 
-Policy rule enforcement
+Moderate deviation ─▶	Manual review
 
-Decision Outcomes
-Scenario	System Behavior
-Low deviation	Auto-approve
-Moderate deviation	Manual review
-Extreme deviation	Auto-reject
+Extreme deviation ─▶ Auto-reject
 
 This mirrors real insurance decision engines, increasing credibility.
 
-Explainability Metrics
+## Explainability Metrics
 
-Every decision includes:
+- Every decision includes:
+- Fraud risk score
+- Cost deviation explanation
+- Policy rule applied
+- UI explicitly states that:
+- No PHI was accessed
+- No embeddings were decrypted
 
-Fraud risk score
+## Scalability Evaluation
 
-Cost deviation explanation
+- Supports:
+- Multiple hospitals
+- Multiple insurers
+- Tenant-isolated encryption
+- Architecture is horizontally scalable
+- Ready for real CyborgDB backend integration
 
-Policy rule applied
+#### Why This Evaluation Matters
 
-UI explicitly states that:
-
-No PHI was accessed
-
-No embeddings were decrypted
-
-Judges can trace and understand every decision.
-
-Scalability Evaluation
-
-Supports:
-
-Multiple hospitals
-
-Multiple insurers
-
-Tenant-isolated encryption
-
-Architecture is horizontally scalable
-
-Ready for real CyborgDB backend integration
-
-Why This Evaluation Matters
-
-✔ Quantitative metrics
-✔ Security guarantees measurable
-✔ Explainable AI decisions
-✔ Real-world feasibility
+- Quantitative metrics
+- Security guarantees measurable
+- Explainable AI decisions
+- Real-world feasibility
 
 This proves the system is practical, secure, and deployable.
