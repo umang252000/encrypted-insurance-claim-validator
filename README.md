@@ -1,6 +1,8 @@
 # Encrypted Insurance Claim Validator
 Zero-Knowledge Fraud Detection using Encrypted Medical & Financial Embeddings
 
+<img width="1024" height="1024" alt="Gemini_Generated_Image_bun3iybun3iybun3" src="https://github.com/user-attachments/assets/e58986a1-e5c2-416c-b7e9-2c068da5d5de" />
+
 ## Overview
 
 Healthcare insurance fraud detection requires validating insurance claims against medical records.
@@ -225,7 +227,7 @@ encrypted-insurance-claim-validator/
 - Professional UI & deployment
 - Production-ready architecture
 
-This is not a toy demo —
+This is not a demo —
 it is a deployable privacy-first AI system.
 
 ## Future Roadmap
