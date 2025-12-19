@@ -1,0 +1,37 @@
+version: "3.9"
+
+services:
+  hospital-agent:
+    build: ./hospital-agent
+    container_name: hospital-agent
+    ports:
+      - "8001:8000"
+    env_file:
+      - .env.example
+
+  insurer-agent:
+    build: ./insurer-agent
+    container_name: insurer-agent
+    ports:
+      - "8002:8000"
+    env_file:
+      - .env.example
+
+  validation-engine:
+    build: ./validation-engine
+    container_name: validation-engine
+    ports:
+      - "8003:8000"
+    env_file:
+      - .env.example
+
+  ui:
+    build: ./ui
+    container_name: claim-validator-ui
+    ports:
+      - "8080:80"
+    environment:
+      - BACKEND_URL=https://miniature-space-barnacle-69xxqx9xqwwpc5j95-8003.app.github.dev
+
+    depends_on:
+      - validation-engine

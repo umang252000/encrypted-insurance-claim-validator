@@ -1,0 +1,15 @@
+{
+  "claim_id": "C-9001",
+  "claimed_amount": 2500,
+  "expected_amount": 1800,
+  "claim_embedding": {
+    "enc_blob": "abc123",
+    "nonce": "n1"
+  },
+  "medical_embeddings": [
+    {
+      "enc_blob": "def456",
+      "nonce": "n2"
+    }
+  ]
+}

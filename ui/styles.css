@@ -1,0 +1,9 @@
+/* Optional custom styles */
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+/* Smooth result appearance */
+#result {
+  transition: all 0.3s ease-in-out;
+}
